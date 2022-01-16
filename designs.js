@@ -1,12 +1,12 @@
 
 
-// For the grid 
+// Functions to make the grid
 function makeGrid() {
     const h = document.getElementById('inputHeight').value;
     const w = document.getElementById('inputWidth').value;
     const table = document.getElementById('pixelCanvas');
     
-
+    //Loop for creating the grid, creates tables, by 0 remove it again
     html = '';
     for (let i = 0; i < h; i++) {
         html += "<tr>";
@@ -20,7 +20,7 @@ function makeGrid() {
     table.innerHTML = html;
     return false;
 }
-// For color
+// Function to fill the grid with colors
 function setColorFul() {
     const c = document.getElementById('colorPicker').value;
     return c;
